@@ -1,0 +1,273 @@
+:root{
+    /* --pr-color :#048853; */
+    --pr-color :#212529;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color:  #F3FFF4; */
+    background-color: #F8F9FA;
+}
+
+.navbar {
+    z-index: 3;
+    position: relative; /* Tambahkan ini */
+}
+
+.navbar-nav .nav-item {
+    display: flex; /* Tambahkan ini */
+    align-items: center; /* Tambahkan ini */
+}
+
+/* navbar */
+.navbar{
+    z-index: 3;
+}
+
+/* Navbar color */
+.nav-color{
+    /* background-color: #00985b; */
+    /* background-color: #48D1CC; */
+    /* background-color: #87CEFA; */
+    background-color: #212529;
+    transition: all ease-in-out .3s;
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+
+.nav-link.active {
+    font-weight: bolder ;
+    position: relative;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Atur tata letak link aktif tanpa perubahan ukuran */
+.navbar-nav .nav-item.active .nav-link {
+    position: relative;
+    top: 0; /* Kembalikan ke posisi semula */
+    padding-bottom: 5px; /* Sesuaikan sesuai kebutuhan untuk memberikan ruang bawah */
+}
+
+/* Navbar Brand dan Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Menyamakan posisi vertikal */
+    margin-top: 5px; /* Sesuaikan margin atas sesuai kebutuhan */
+}
+
+.navbar-brand img {
+    margin-right: 5px; /* Berikan jarak antara gambar dan teks */
+}
+
+/* Form Input Cari */
+.navbar-form {
+    display: flex;
+    align-items: center; /* Menyamakan posisi vertikal */
+    margin-top: 5px; /* Sesuaikan margin atas sesuai kebutuhan */
+}
+
+/* Tautan Navbar */
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center; /* Menyamakan posisi vertikal */
+}
+
+/* Atur tata letak link aktif tanpa perubahan ukuran (sudah ada di atas) */
+
+/* Gaya tambahan untuk mengatur tata letak dropdown (sudah ada di atas) */
+
+
+.input-cari:focus{
+    border: none;
+}
+
+.input-cari .btn-down{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 10px 0 10px;
+}
+
+.input-cari .btn-cari{
+    height: 50px;
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0 10px 0 10px;
+}
+
+/* css form input */
+.input-group {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    font-size: 1rem;
+    color: black; /* Warna ikon hitam */
+    margin-left: -30px; /* Jarak ikon dengan input */
+}
+
+.nav-tabs{
+    border: none;
+}
+
+.nav-tabs .nav-link{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 0 0;
+    color: #000;
+    border: none;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    border-radius: 0 9px 0 0;
+    font-weight: 500;
+}
+
+/* rekomendasi section */
+
+.card{
+    height: 460px;
+    width: 95%;
+    border: none;
+}
+
+#rekomendasi {
+    margin-bottom: 120px;
+}
+
+#rekomendasi .card:hover{
+    /* background: linear-gradient(180deg, #32b1ff, #000);
+     */
+    background-color:#e9ecef;
+}
+
+.img-rekomendasi{
+    max-width: 100px;
+    max-height: 150px;
+    margin-left: 50px;
+}
+
+.card-body h4{
+    color: #000;
+    font-weight: 500;
+    font-size: 10pt;
+    line-height: .8rem;
+}
+
+.card-body p{
+    color: #454545;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card:hover .card-body h4{
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+.card:hover .card-body p{
+    /* color: #fff; */
+    transition: all ease-in-out .3s;
+}
+
+#rekomendasi .btn.btn-primary:hover{
+    background-color: #32b1ff;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 30px;
+    background: #000;
+}
+
+.copyright{
+    bottom: 1%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+footer a{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: blue;
+}
+
+/* buku terbaru */
+#terbaru .card:hover{
+    background-color: #e9ecef;
+    /* background: linear-gradient(180deg, #32b1ff, #000); */
+    /* background-color: #007245; */
+}
+
+#terbaru .btn.btn-primary:hover{
+    background-color: #32b1ff;
+}
+
+/* carousel */
+.carousel-mini .carousel-inner .carousel-item img {
+    margin-top: -600px;
+}
+
+#search-results .card:hover{
+    background-color: #e9ecef;
+}
+
+.comment-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.comment-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-box h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.comment-box p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.media {
+  border: 1px solid white; 
+  /* background-color: #F8F9FA; */
+}
+
+.card.auto-height {
+    height: auto !important;
+  }
+  
